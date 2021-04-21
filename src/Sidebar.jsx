@@ -29,16 +29,13 @@ const Sidebar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse order-last"
-            id="sidenavbar"
-          >
+          <div className="collapse navbar-collapse order-last" id="sidenavbar">
             <ul className="navbar-nav mt-2 mb-2 mb-lg-0 flex-column sidenavlist">
               <li className="nav-item">
                 <NavLink
                   className="nav-link "
                   aria-current="page"
-                  to="/dashboard"
+                  to="/home"
                 >
                   <FaHome className="reacticon" />
                   Dashboard

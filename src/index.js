@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Dashboard from './Dashboard';
+import './css/dashboard.css';
+import Home from './Home';
 import Sidebar from "./Sidebar";
 import { Switch, Route, Redirect } from "react-router-dom";
 import {BrowserRouter} from "react-router-dom";
@@ -15,10 +15,10 @@ ReactDOM.render(<BrowserRouter>
 <div className="container-fluid">
 <div className="row">
 <Sidebar/>
-  <Route exact path="/dashboard" component={Dashboard}></Route>
+  <Route exact path="/home" component={Home}></Route>
   <Route  path="/myaccount" component={Myaccount}></Route>
   <Route  path="/myorders" component={Myorders}></Route>
-  <Redirect to="/dashboard"/>
+  <Redirect to="/home"/>
   </div>
   </div>
 </Switch>
